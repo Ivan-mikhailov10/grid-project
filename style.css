@@ -1,0 +1,66 @@
+body {
+  font-family: Verdana, sans-serif;
+  color: #a6a6d8;
+ }
+
+.container {
+  width: 1040px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 284px 98px 90px 109px 92px ;
+  grid-template-rows: 40px 40px 82px 20px 30px;
+  grid-template-areas:
+    "photo header header header header"
+    "photo main main content content"
+    "photo about about about about"
+    "photo food food food food"
+    "photo checkbox-1 checkbox-2 checkbox-3 checkbox-4"
+    "photo submit submit submit submit";
+}
+
+h2 {
+  color: #545454;
+}
+
+
+.profile {
+  width: 950px;
+}
+
+.profile-form {
+
+  padding: 15px;
+}
+.name{
+grid-area: header;
+}
+.photo{
+grid-area: photo;
+}
+.surname{
+grid-area: main;
+}
+.place{
+grid-area: content;
+}
+.about{
+grid-area: about;
+}
+.food{
+grid-area: food;
+}
+.checkbox-1{
+grid-area: checkbox-1;
+}
+.checkbox-2{
+grid-area: checkbox-2;
+}
+.checkbox-3{
+grid-area: checkbox-3;
+}
+.checkbox-4{
+grid-area: checkbox-4;
+}
+.submit{
+  grid-area: submit;
+}
