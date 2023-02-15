@@ -6,16 +6,7 @@ body {
 .container {
   width: 1040px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 284px 98px 90px 109px 92px ;
-  grid-template-rows: 40px 40px 82px 20px 30px;
-  grid-template-areas:
-    "photo header header header header"
-    "photo main main content content"
-    "photo about about about about"
-    "photo food food food food"
-    "photo checkbox-1 checkbox-2 checkbox-3 checkbox-4"
-    "photo submit submit submit submit";
+  
 }
 
 h2 {
@@ -25,42 +16,48 @@ h2 {
 
 .profile {
   width: 950px;
+  margin: 0 auto;
 }
 
 .profile-form {
 
   padding: 15px;
+  display: grid;
+  column-gap: 15px;
+  grid-template-columns: repeat(5, 1fr) ;
+  grid-template-rows: repeat(6, 1fr);
 }
 .name{
-grid-area: header;
+grid-column: 2 / 7;
 }
 .photo{
-grid-area: photo;
+  grid-row: 1 / 6;
+
 }
 .surname{
-grid-area: main;
+grid-column: 2 / 4;
 }
 .place{
-grid-area: content;
+grid-column: 4 / 6;
 }
 .about{
-grid-area: about;
+grid-column: 2 / 6;
 }
 .food{
-grid-area: food;
+grid-column: 2 / 6;
 }
 .checkbox-1{
-grid-area: checkbox-1;
+grid-column: 2 / 3;
 }
 .checkbox-2{
-grid-area: checkbox-2;
+grid-column: 3 / 4;
 }
 .checkbox-3{
-grid-area: checkbox-3;
+grid-column: 4 / 5;
 }
 .checkbox-4{
-grid-area: checkbox-4;
+grid-column: 5 / 6;
 }
 .submit{
-  grid-area: submit;
+grid-column: 2 / 3;
 }
