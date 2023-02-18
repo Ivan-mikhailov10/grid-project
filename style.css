@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   font-family: Verdana, sans-serif;
   color: #a6a6d8;
@@ -24,8 +28,8 @@ h2 {
   padding: 15px;
   display: grid;
   column-gap: 15px;
-  grid-template-columns: repeat(5, auto) ;
-  grid-template-rows: repeat(6, auto);
+  grid-template-columns: 284px 93px 90px 109px 92px ;
+  grid-template-rows: 60px 60px 102px 20px 20px 30px ;
 }
 .name{
 grid-column: 2 / 7;
